@@ -1,0 +1,8 @@
+// Scroll reveal already handled above
+
+// Newsletter Form Submission
+document.getElementById('subscribeForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  document.getElementById('confirmationMessage').style.display = 'block';
+  this.reset();
+});
