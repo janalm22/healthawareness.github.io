@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #555;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #a3d8d1;  /* Pastel teal */
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  background-color: #f9c2b6;  /* Pastel pink */
+  padding: 15px 0;
+  border-bottom: 2px solid #ddd;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 30px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: #4CAF50; /* Subtle green on hover */
+  text-decoration: underline;
+}
+
+.info-section, .quiz-section, .meditation-section {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.tracker {
+  margin: 15px 0;
+}
+
+input[type="number"] {
+  padding: 12px;
+  width: 60%;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border: 1px solid #a3d8d1;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #ffb3ba;  /* Pastel pink */
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff8a80;
+  transform: translateY(-3px);
+}
+
+.quiz-section button {
+  background-color: #a3d8d1;  /* Pastel teal */
+  margin-top: 30px;
+}
+
+.meditation-video {
+  margin: 20px 0;
+}
+
+footer {
+  background-color: #f1f1f1;
+  color: #777;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 2px solid #ddd;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* Smooth animation for sections */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+section {
+  animation: fadeIn 1s ease-in-out;
+}
